@@ -25,12 +25,12 @@ KappaV(shp1.path, shp2.path,
 }
 
 \details{
-If nto specified blabla
+If not specified the default parameters are \code{shp1.fieldID = "ID"}, \code{shp2.fieldID = shp1.fieldID}, \code{shp1.fieldOS = "OS"},\code{shp2.fieldOS = shp1.fieldOS} and \code{plot = FALSE}
 }
 
 \value{
 A list with two components:
-\item{confusion.matrix }{Like it say, the confusion matrix with the corresponding areas.}
+\item{confusion.matrix }{the confusion matrix with the corresponding areas.}
 \item{kappa.v }{a numeric with two values: Kappa (the value of vectorial Kappa) and Kappa.sd (the associated standard deviation)}
 }
 

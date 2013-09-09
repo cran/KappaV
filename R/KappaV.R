@@ -1,3 +1,4 @@
+
 KappaV <-
 function(shp1.path, shp2.path,
   shp1.fieldID = "ID", shp2.fieldID = shp1.fieldID,
@@ -34,8 +35,8 @@ function(shp1.path, shp2.path,
     for (j in seq(along=ov[[i]])) {
       yj     <- SpatialPolygons(list(shp2@polygons[[ov[[i]][j]]]))
       pj     <- as(yj, "gpc.poly")    
-      #int.ij <- area.poly(intersect(pi, pj))
-      int.ij <- gpclib::area.poly(gpclib::intersect(pi, pj))
+      int.ij <- area.poly(intersect(pi, pj))
+      #int.ij <- gpclib::area.poly(gpclib::intersect(pi, pj)) # previously used with gpclib
       if (int.ij != 0) {
         #cat("*")
         ri <- which(shp1.lev == shp1@data[shp1@data[ ,shp1.fieldID2]==i, shp1.fieldOS])
