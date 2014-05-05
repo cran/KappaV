@@ -1,1 +1,5 @@
-exportPattern("^[[:alpha:]]+")
+export(KappaV)
+importFrom(PresenceAbsence,Kappa)
+importFrom(maptools,readShapeSpatial)
+importFrom(rgeos,area.poly)
+importFrom(sp,SpatialPolygons)
